@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedra, Papel e Tesoura</title>
+  <link rel="shortcut icon" type="imagex/png" href="./imagens/pedra-papel-tesoura.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cabecalho">
+    <img id="logo" src="./imagens/pedra-papel-tesoura.png" alt="logo">
+    <h1>Pedra, Papel e Tesoura</h1>
+    <img id="logo" src="./imagens/pedra-papel-tesoura.png" alt="logo">
+  </div>
+
+  <div class="infos">
+    <h2>Mostre sua melhor jogada e vença o computador! Divirta-se!</h2>
+  </div>
+
+  <div id="webcam-container"></div>
+  <button id="btn-iniciar">Fazer Jogada</button>
+
+  <div class="status">
+    <div>Sua jogada: <span id="player-move">—</span></div>
+    <div>Computador: <span id="computer-move">—</span></div>
+    <span id="result"></span>
+  </div>
+
+  <div class="scoreboard">
+    Placar — Você: <span id="player-score">0</span> | Computador: <span id="computer-score">0</span>
+  </div>
+
+  <button id="btn-reiniciar">Reiniciar Jogo</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
